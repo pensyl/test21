@@ -1,0 +1,214 @@
+ /* CORE STYLES */
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* unvisited link */
+a:link {
+	color: #FFF;
+	text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+ 	color: #DDD;
+}
+
+/* mouse over link */
+a:hover {
+  	color: #FF8;
+}
+
+/* selected link */
+a:active {
+  	color: #FFC;
+}
+h1{
+		font-variant: sans-serif;
+		font-family: "helvetica";
+		font-size: 26px;
+		color: #DD4;
+		text-align: center;
+	}
+video{
+	object-fit: cover;
+}
+ul{
+	
+}
+ul li{
+list-style-type: square;
+color: #BBB;
+}
+ul.sqr {
+	/*list-style-type: square;*/
+	font-weight: normal;
+	text-transform: uppercase;
+	/*color: #444;*/
+	letter-spacing: 0.30em;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 3.2;
+	vertical-align: top;
+}
+
+#greyBG {
+	width: 767px;
+	height: 954px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	/*background-image: linear-gradient(180deg, #CCC 0%, #444);*/
+	background-color: #333;
+	position: relative;
+}
+
+.centerV {
+    	width: 540px;
+    	height: 100px;
+ 		margin: 0;
+  		position: absolute;
+  		top: 20%;
+  		left: 30%;
+  		-ms-transform: translate(-50%, -50%);
+  		transform: translate(-50%, -50%);
+  		
+	}
+
+.menuItem {
+	width: 300px;
+	height: 370px;
+	position: absolute;
+	left: 22.5%;
+	top: 35%;
+	border-style: solid;
+	border-color: #555;
+	/*margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;*/
+
+}
+/*#gradBG {
+	width: 700px;
+	height: 800px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: linear-gradient(90deg, #FFF 0%, #777 25%, #444 45%, #444 55%, #777 75%, #FFF 100%);
+}*/
+
+/*cyanBG {
+	width: 540px;
+	height: 800px;
+	background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+	}*/
+
+.goBack {	
+	width: 30px;
+	height: 20px;
+	position: absolute;
+	border-style: solid;
+	border-color: #000;
+	border-width: 1px;
+	left: 0;
+	top: 0;
+	opacity: .2;
+}
+
+/*#goBack {
+	opacity: 0;
+}*/
+
+.initmoonPos {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	width: 114px;
+	height: 64px;
+	}
+.moonPos1 {
+	opacity: 1;
+	animation-name: opDelay;
+	animation-direction: normal;
+	animation-delay: .5s;
+	animation: opDelay .5s 1;
+	position: relative;
+	overflow: visible;
+	width: 114px;
+	height: 64px;
+	left: 99px;
+	top: 200px;
+}
+
+@keyframes opDelay {
+from {
+    transform:rotate(0deg);
+	}
+to {
+    transform:rotate(360deg);
+	}
+	}
+
+.moonPos2 {
+	animation-name: move_2;
+	animation-direction: normal;
+	animation-delay: .5s;
+	animation: move_2 2.0s 1;
+	position: relative;
+	width: 114px;
+	height: 64px;
+	left: 99px;
+	top: 450px;
+}
+
+@keyframes move_2 {
+	0%   {left: -130px; top: 650px; opacity: 0;}
+	50%   {left: 130px; top: 250px; opacity: .5;}
+	100%  {left: 99px; top: 450px; opacity: 1;}
+	
+	/*from {
+			left: -130px;
+			top: 650px;
+		}
+		to {
+			left: 99px;
+			top: 558px;
+		}*/
+}
+
+section {
+	height: 100vh;
+	background: #000;
+}
+h1 span:nth child(1){
+	animation-delay: 1s;
+}
+h1 span:nth child(2){
+	animation-delay: 2s;
+}
+h1 span:nth child(3){
+	animation-delay: 2.5s;
+}
+h1 span:nth child(4){
+	animation-delay: 3s;
+}
+h1 span:nth child(5){
+	animation-delay: 3.5s;
+}
+h1 span:nth child(6){
+	animation-delay: 4.5s;
+}
+h1 span:nth child(7){
+	animation-delay: 5s;
+}
+h1 span:nth child(8){
+	animation-delay: 5.5s;
+}
+h1 span:nth child(9){
+	animation-delay: 6s;
+}
+h1 span:nth child(1){
+	animation-delay: 1s;
+}
